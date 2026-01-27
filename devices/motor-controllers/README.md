@@ -93,13 +93,13 @@ Inside any module JSON such as `frontleft.json`,`frontright.json`,`backleft.json
 
 ## Possible Motor Controller Types
 
-| Device                    | type                                                                                  |
-| ------------------------- | ------------------------------------------------------------------------------------- |
-| [SparkMAX](sparkmax.md)   | `sparkmax` (same as `neo`);`neo` ; `neo550`                                           |
-| [SparkFlex](sparkflex.md) | `sparkflex` (same as `vortex`); `vortex`; `sparkflex_neo`; `sparkflex_vortex`         |
-| [TalonFX](talonfx.md)     | `talonfx`(same as `krakenx60`);`falcon500`;`falcon500foc`;`krakenx60`; `krakenx60foc` |
-| TalonSRX                  | `talonsrx`                                                                            |
-| SparkMAX Brushed          | `sparkmax_brushed`                                                                    |
+| Device                    | type                                                                                      |
+| ------------------------- | ----------------------------------------------------------------------------------------- |
+| [SparkMAX](sparkmax.md)   | `sparkmax_neo` ; `sparkmax_neo550`; `sparkmax_vortex`;`sparkmax_minion`;`sparkmax_pulsar` |
+| [SparkFlex](sparkflex.md) | `sparkflex_minion`;`sparkflex_pulsar`; `sparkflex_neo`; `sparkflex_vortex`                |
+| [TalonFX](talonfx.md)     | `talonfx`(same as `krakenx60`);`falcon500`;`falcon500foc`;`krakenx60`; `krakenx60foc`     |
+| TalonSRX                  | `talonsrx`                                                                                |
+| SparkMAX Brushed          | `sparkmax_brushed`                                                                        |
 
 {% hint style="warning" %}
 At this time we do not provide documentation on brushed motor utilization, like `sparkmax_brushed` and `talonsrx`.

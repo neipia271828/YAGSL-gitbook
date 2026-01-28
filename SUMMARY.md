@@ -27,7 +27,6 @@
 * [Java API](https://yet-another-software-suite.github.io/YAGSL/javadocs/)
 * [Example Code](https://github.com/Yet-Another-Software-Suite/YAGSL/tree/main/examples)
 * [Config Generator](https://yet-another-software-suite.github.io/YAGSL/config_generator/)
-* [💸 Donations](https://yetanothersoftwaresuite.com/)
 * [👕 Merch](https://yagsl.com/)
 * [Discord](https://discord.gg/yass)
 * [YAMS](https://yams.yamgen.com/)

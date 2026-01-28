@@ -2,6 +2,9 @@
 
 * [Welcome to Yet Another Swerve Document](README.md)
   * [Resources](readme/resources.md)
+
+## Translations
+
 * [Turkish Translation by 9024](https://callister.gitbook.io/yagsl-turkish)
 
 ## Overview

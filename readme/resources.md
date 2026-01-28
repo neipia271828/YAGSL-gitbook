@@ -6,4 +6,4 @@
 
 YAGSL Flyers -&#x20;
 
-{% file src="../.gitbook/assets/Y.A.G.S.L..pdf" %}
+{% file src="../.gitbook/assets/YAGSL Flyer.pdf" %}

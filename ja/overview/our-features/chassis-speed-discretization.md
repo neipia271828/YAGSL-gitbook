@@ -6,7 +6,7 @@ description: さらに数学的な処理...
 
 ## シャシー速度離散化とは？
 
-シャシー速度離散化は、スワーブドライブの並進移動時のスキュー（ずれ）を低減するために使用されます。[`SwerveDrive.chassisVelocityCorrection`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#chassisVelocityCorrection) が `true` の場合にのみ呼び出されます。
+シャシー速度離散化は、スワーブドライブの並進移動時の軌道のずれを低減するために使用されます。[`SwerveDrive.chassisVelocityCorrection`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#chassisVelocityCorrection) が `true` の場合にのみ呼び出されます。
 
 ## シャシー速度離散化の使い方
 

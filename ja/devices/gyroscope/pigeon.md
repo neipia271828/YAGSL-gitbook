@@ -12,7 +12,7 @@ Phoenix Tunerは「Phoenix Framework for HERO C#」から入手できます
 
 ## ドキュメント
 
-PigeonはPhoenix 5でのみ利用可能なため、ドキュメントは以下にあります。このデバイスが理由の一つとして、YAGSLにPhoenix 5ライブラリを含める必要があります。
+PigeonはPhoenix 5でのみ利用可能なため、ドキュメントは以下にあります。このデバイスも一因となり、YAGSLにPhoenix 5ライブラリを含める必要があります。
 
 {% embed url="https://v5.docs.ctr-electronics.com/en/stable/ch11_BringUpPigeon.html" %}
 Pigeonのプログラミングと設定ガイド

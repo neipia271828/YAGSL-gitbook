@@ -37,7 +37,7 @@ CAN ID がユニークであることを確認してください！REV Power Dis
 <figure><img src="../.gitbook/assets/devilbots_cropped_swerve_orientation.png" alt=""><figcaption></figcaption></figure>
 
 2. コードをデプロイする。
-3. **ロボットを有効にしないこと！**
+3. **ロボットをEnableしないこと！**
 4. ドライバーダッシュボードを開く。
 
 <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>

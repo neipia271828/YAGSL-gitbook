@@ -2,7 +2,7 @@
 
 ## プルリクエストは常にレビューされます！
 
-YAGSL をより良くしたい方はぜひプルリクエストを作成してください。生活の質を向上させる変更を歓迎しています。
+YAGSL をより良くしたい方はぜひプルリクエストを作成してください。コードの品質を向上させる変更を歓迎しています。
 
 {% embed url="https://github.com/BroncBotz3481/YAGSL-Example/pulls?q=is%3Apr+is%3Aclosed" %}
 
@@ -20,7 +20,7 @@ YAGSL-Example dev ブランチ
 
 ## 2025.8.0
 
-* ブラシ付き SparkMAX に接続されたアブソリュートエンコーダーの修正
+* ブラシ付き SparkMAX に接続された絶対エンコーダーの修正
 
 ## 2025.7.2
 
@@ -45,7 +45,7 @@ YAGSL-Example dev ブランチ
 * [ ] `SwerveDrive.restoreInternalOffset` を `SwerveDrive.useInternalFeedbackSensor` に非推奨化
 * [ ] [@DanPeled](https://github.com/DanPeled) による Shuffleboard から任意のダッシュボードへの参照更新
 * [ ] SparkFlex に接続されたアブソリュートエンコーダーの修正
-* [ ] 接続されたアブソリュートエンコーダーはフィードバックデバイスとして自動設定されなくなりました。明示的に呼び出す必要があります
+* [ ] 接続された絶対エンコーダーはフィードバックデバイスとして自動設定されなくなりました。明示的に呼び出す必要があります
 * [ ] `SwerveInputStream.driveToPose` を追加
 * [ ] [@clrozeboom](https://github.com/clrozeboom) によるフィードフォワードを使うドライブ関数でのモジュール状態オプション最適化 ([#314](https://github.com/BroncBotz3481/YAGSL-Example/pull/314))
 * [ ] [@kytpbs](https://github.com/kytpbs) によるすべてのクローザブルアイテムへの `AutoClosable` 実装 ([#317](https://github.com/BroncBotz3481/YAGSL-Example/pull/317))
@@ -74,7 +74,7 @@ YAGSL-Example dev ブランチ
 ## 2025.2.1
 
 * [ ] 相対エンコーダーを使った最適化の修正
-* [ ] SparkMax の `SparkMaxSwerve.isAbsoluteEncoderAttached()` でのアブソリュートエンコーダー検出修正（Team 217 発見）
+* [ ] SparkMax の `SparkMaxSwerve.isAbsoluteEncoderAttached()` での絶対エンコーダー検出修正（Team 217 発見）
 * [ ] SparkMax の `absoluteEncoder` を `Optional` に変更（Team 217 による）
 * [ ] 自転しながら SysId を行う方法を追加、`SwerveDriveTest.setDriveSysIdRoutine(new Config(),this, swerveDrive, 12, true)` にパラメーターを変更
 
@@ -89,7 +89,7 @@ YAGSL-Example dev ブランチ
 
 * [ ] `Adjusted IMU Yaw` の修正と `SmartDashboard` への公開
 * [ ] シミュレーション速度と読み取り値をモジュール出力に追加
-* [ ] スタンドアロン TalonSRX に接続された SRX Mag エンコーダー用に `srxmag_standalone` アブソリュートエンコーダータイプを追加
+* [ ] スタンドアロン TalonSRX に接続された SRX Mag エンコーダー用に `srxmag_standalone` 絶対エンコーダータイプを追加
 
 ## 2025.1.2
 
@@ -145,7 +145,7 @@ YAGSL-Example dev ブランチ
 * [ ] [@catr1xLiu](https://github.com/catr1xLiu) による Maple-Sim の追加 ([#251](https://github.com/BroncBotz3481/YAGSL-Example/pull/251))
 * [ ] [@Etaash-mathamsetty](https://github.com/Etaash-mathamsetty) による kA サポートの実装 ([#258](https://github.com/BroncBotz3481/YAGSL-Example/pull/258))
 * [ ] [@thenetworkgrinch](https://github.com/thenetworkgrinch) による WPILib 2025 Beta-2 への更新 ([#257](https://github.com/BroncBotz3481/YAGSL-Example/pull/257))
-* [ ] [@WispySparks](https://github.com/WispySparks) による Talon SRX での統合アブソリュートエンコーダーサポート追加 ([#208](https://github.com/BroncBotz3481/YAGSL-Example/pull/208))
+* [ ] [@WispySparks](https://github.com/WispySparks) による Talon SRX での統合絶対エンコーダーサポート追加 ([#208](https://github.com/BroncBotz3481/YAGSL-Example/pull/208))
 * [ ] [@catr1xLiu](https://github.com/catr1xLiu) による DCMotor モデリングを使った PathPlanner DriveFeedForward の実装 ([#260](https://github.com/BroncBotz3481/YAGSL-Example/pull/260))
 * [ ] NavX 反転の修正
 * [ ] Team 457 Grease Monkeys の協力による MAXSwerve のアブソリュートエンコーダー問題の修正
@@ -165,7 +165,7 @@ YAGSL-Example dev ブランチ
 * [ ] [clrozeboom](https://github.com/clrozeboom) によるスワーブ設定テスト変更のマージ ([#228](https://github.com/BroncBotz3481/YAGSL-Example/pull/228))
 * [ ] [yapplejack](https://github.com/yapplejack) による角速度補正（YAGSL を大幅に改善する重要なアップデート！）([#231](https://github.com/BroncBotz3481/YAGSL-Example/pull/231))
 * [ ] [yapplejack](https://github.com/yapplejack) による SparkMax 最適化、平均フィルターの変更など ([#233](https://github.com/BroncBotz3481/YAGSL-Example/pull/233))
-* [ ] `sparkmax_analog5v` を有効なアブソリュートエンコーダータイプとして追加
+* [ ] `sparkmax_analog5v` を有効な絶対エンコーダータイプとして追加
 * [ ] [yapplejack](https://github.com/yapplejack) による desiredChassisSpeeds を使った desaturateWheelSpeeds() の提案 ([#232](https://github.com/BroncBotz3481/YAGSL-Example/pull/232))
 * [ ] `SwerveDrive.setModuleEncoderAutoSynchronize` による自動同期のオプション設定化
 * [ ] `TalonFXSwerve` のコンフィギュレーター問題を修正

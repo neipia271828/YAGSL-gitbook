@@ -71,7 +71,7 @@
   * [SparkMAX](devices/motor-controllers/sparkmax.md)
   * [SparkFlex](devices/motor-controllers/sparkflex.md)
   * [TalonFX](devices/motor-controllers/talonfx.md)
-* [アブソリュートエンコーダー](devices/absolute-encoders.md)
+* [絶対エンコーダー](devices/absolute-encoders.md)
 
 ## アナリティクスとデバッグ
 

@@ -10,10 +10,10 @@
 | --- | --- | --- | --- |
 | `drive` | [デバイス](../../configuring-yagsl/configuration/device-configuration.md) | Y | ドライブモーターデバイスの設定 |
 | `angle` | [デバイス](../../configuring-yagsl/configuration/device-configuration.md) | Y | 角度モーターデバイスの設定 |
-| `encoder` | [デバイス](../../configuring-yagsl/configuration/device-configuration.md) | Y | アブソリュートエンコーダーデバイスの設定 |
+| `encoder` | [デバイス](../../configuring-yagsl/configuration/device-configuration.md) | Y | 絶対エンコーダーデバイスの設定 |
 | `inverted` | [MotorConfig](swerve-module.md#motorconfig) | Y | 各モーターの反転状態（boolean） |
-| `absoluteEncoderOffset` | 度 | Y | 0からのアブソリュートエンコーダーオフセット（度）。負の値が必要な場合があります。 |
-| `absoluteEncoderInverted` | Bool | N | アブソリュートエンコーダーの反転状態 |
+| `absoluteEncoderOffset` | 度 | Y | 0からの絶対エンコーダーオフセット（度）。負の値が必要な場合があります。 |
+| `absoluteEncoderInverted` | Bool | N | 絶対エンコーダーの反転状態 |
 | `location` | [Location](swerve-module.md#location) | Y | ロボット中心からスワーブモジュール中心までのインチ単位の位置。+xはロボット前方、+yはロボット左方向。 |
 | `conversionFactor` | [MotorConfig](swerve-module.md#motorconfig) | N | _上書き_ オンボードPIDのモーターコントローラーに適用するコンバージョンファクター。[`swervedrive.json`](https://github.com/BroncBotz3481/YAGSL/wiki/Swerve-Drive) のこの設定を上書きするために使用。 |
 

@@ -1,20 +1,20 @@
-# アブソリュートエンコーダー
+# 絶対エンコーダー
 
-YAGSLはFRCで一般的に使用されているほとんどのアブソリュートエンコーダーをサポートしています。ブラシ付きモーターを使用する場合はアブソリュートエンコーダーが必要です。
+YAGSLはFRCで一般的に使用されているほとんどの絶対エンコーダーをサポートしています。ブラシ付きモーターを使用する場合は絶対エンコーダーが必要です。
 
-アブソリュートエンコーダーの値はドライバーダッシュボードの `swerve/modules/.../Raw Absolute Encoder` に表示され、ほとんどの場合モジュールJSON設定ファイルの `absoluteEncoderOffset` の調整に使用できます。
+絶対エンコーダーの値はドライバーダッシュボードの `swerve/modules/.../Raw Absolute Encoder` に表示され、ほとんどの場合モジュールJSON設定ファイルの `absoluteEncoderOffset` の調整に使用できます。
 
-## アブソリュートエンコーダーチェックリスト
+## 絶対エンコーダーチェックリスト
 
-* [ ] すべてのアブソリュートエンコーダーが反時計回りを正方向とする。
-* [ ] マグネティックアブソリュートエンコーダーが静止時および動作中（ロボット移動中）にマグネットを良好に読み取れている。
-* [ ] アブソリュートエンコーダーのCAN IDまたはアナログ入力チャンネルがユニークである。
-* [ ] アブソリュートエンコーダーが正しいIDまたはアナログ入力チャンネルで定義されている。
-* [ ] アブソリュートエンコーダーが全範囲（`0`〜`360`）を持っている。
+* [ ] すべての絶対エンコーダーが反時計回りを正方向とする。
+* [ ] マグネティック絶対エンコーダーが静止時および動作中（ロボット移動中）にマグネットを良好に読み取れている。
+* [ ] 絶対エンコーダーのCAN IDまたはアナログ入力チャンネルがユニークである。
+* [ ] 絶対エンコーダーが正しいIDまたはアナログ入力チャンネルで定義されている。
+* [ ] 絶対エンコーダーが全範囲（`0`〜`360`）を持っている。
 
-## スワーブアブソリュートエンコーダーラッパー
+## スワーブ絶対エンコーダーラッパー
 
-YAGSLはスワーブモジュールの動作に必要なデータを均一に取得・設定するために、サポートするすべてのアブソリュートエンコーダーのラッパーを作成しています。このラッパーは [`SwerveAbsoluteEncoder`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/encoders/SwerveAbsoluteEncoder.html) と呼ばれます。すべての [`SwerveAbsoluteEncoder`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/encoders/SwerveAbsoluteEncoder.html) は、[`SwerveModule`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveModule.html#configuration) の設定オブジェクト [`SwerveModuleConfiguration`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/SwerveModuleConfiguration.html) のアブソリュートエンコーダー属性 [`absoluteEncoder`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/SwerveModuleConfiguration.html#absoluteEncoder) から取得できます。[`SwerveModule`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveModule.html) は [`SwerveDrive.getModules()`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#getModules()) で簡単に取得できます。
+YAGSLはスワーブモジュールの動作に必要なデータを均一に取得・設定するために、サポートするすべての絶対エンコーダーのラッパーを作成しています。このラッパーは [`SwerveAbsoluteEncoder`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/encoders/SwerveAbsoluteEncoder.html) と呼ばれます。すべての [`SwerveAbsoluteEncoder`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/encoders/SwerveAbsoluteEncoder.html) は、[`SwerveModule`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveModule.html#configuration) の設定オブジェクト [`SwerveModuleConfiguration`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/SwerveModuleConfiguration.html) の絶対エンコーダー属性 [`absoluteEncoder`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/SwerveModuleConfiguration.html#absoluteEncoder) から取得できます。[`SwerveModule`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveModule.html) は [`SwerveDrive.getModules()`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#getModules()) で簡単に取得できます。
 
 YAGSLはスワーブドライブの動作に必要なデータを均一に取得・設定するために、サポートするすべてのモーターコントローラーのラッパーも作成しています。このラッパーは [`SwerveMotor`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/motors/SwerveMotor.html) と呼ばれます。すべての [`SwerveMotor`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/motors/SwerveMotor.html) は、[`SwerveModule`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveModule.html#configuration) の設定オブジェクト [`SwerveModuleConfiguration`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/SwerveModuleConfiguration.html) のモーター定義 [`angleMotor`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/SwerveModuleConfiguration.html#angleMotor) および [`driveMotor`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/parser/SwerveModuleConfiguration.html#driveMotor) から取得できます。[`SwerveModule`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveModule.html) は [`SwerveDrive.getModules()`](https://yet-another-software-suite.github.io/YAGSL/javadocs/swervelib/SwerveDrive.html#getModules()) で簡単に取得できます。
 
@@ -56,17 +56,17 @@ YAGSLはスワーブドライブの動作に必要なデータを均一に取得
   }
 </code></pre>
 
-## アブソリュートエンコーダーの設定
+## 絶対エンコーダーの設定
 
 {% hint style="warning" %}
 現在、`canbus` オプションをサポートしているのはCTREデバイスのみです。デバイスがroboRIOの `canbus` を使用している場合は、サポートされているCTREデバイスに対して `null` または `"rio"` を使用してください。CANivoreを使用しており、デバイスがCANivoreバス上にある場合は、名前がCANivoreの名前と一致している必要があります。
 {% endhint %}
 
 {% hint style="success" %}
-アブソリュートエンコーダーがSparkMAXに接続されている場合は、最高のパフォーマンスのために [`SwerveDrive.pushOffsetsToEncoders()`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#pushOffsetsToEncoders\(\)) を使用してください。これにより、オンボードPIDセンサーがアタッチされたエンコーダーに設定されます！
+絶対エンコーダーがSparkMAXに接続されている場合は、最高のパフォーマンスのために [`SwerveDrive.pushOffsetsToEncoders()`](https://broncbotz3481.github.io/YAGSL-Lib/docs/swervelib/SwerveDrive.html#pushOffsetsToEncoders\(\)) を使用してください。これにより、オンボードPIDセンサーがアタッチされたエンコーダーに設定されます！
 {% endhint %}
 
-`frontleft.json`、`frontright.json`、`backleft.json`、`backright.json` などのモジュールJSONファイルでは、アブソリュートエンコーダーを以下のように設定します。
+`frontleft.json`、`frontright.json`、`backleft.json`、`backright.json` などのモジュールJSONファイルでは、絶対エンコーダーを以下のように設定します。
 
 <pre class="language-json"><code class="lang-json">{
   "drive": {
@@ -97,7 +97,7 @@ YAGSLはスワーブドライブの動作に必要なデータを均一に取得
 }
 </code></pre>
 
-## 使用可能なアブソリュートエンコーダータイプ
+## 使用可能な絶対エンコーダータイプ
 
 {% hint style="warning" %}
 モジュールが回転し続ける場合は、ステアリング/角度/アジマスモーターを反転させてみてください。

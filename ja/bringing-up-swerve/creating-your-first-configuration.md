@@ -28,7 +28,7 @@ _注意: 上から見たとき、ベベルギアのある側のホイールが**
 
 ### ステップ 1: モジュールタイプ
 
-<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td></td><td><strong>モデル、バージョンなど</strong></td></tr><tr><td><em>モーター</em></td><td></td></tr><tr><td><em>コントローラー</em></td><td></td></tr><tr><td><em>アブソリュートエンコーダー</em></td><td></td></tr><tr><td><em>IMU</em></td><td></td></tr></tbody></table>
+<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td></td><td><strong>モデル、バージョンなど</strong></td></tr><tr><td><em>モーター</em></td><td></td></tr><tr><td><em>コントローラー</em></td><td></td></tr><tr><td><em>絶対エンコーダー</em></td><td></td></tr><tr><td><em>IMU</em></td><td></td></tr></tbody></table>
 
 ### ステップ 2: ビルド固有の詳細
 
@@ -54,27 +54,27 @@ _注意: 上から見たとき、ベベルギアのある側のホイールが**
 _注意: 各モジュールの FW を更新し、保存された設定をファクトリーデフォルトにリセットしてください。_
 {% endhint %}
 
-<table data-full-width="true"><thead><tr><th>モジュール</th><th>モーター CAN ID</th><th>モーター CAN ID</th><th>エンコーダー CAN/チャンネル ID</th></tr></thead><tbody><tr><td></td><td><strong>ドライブ</strong></td><td><strong>角度</strong></td><td><strong>アブソリュートエンコーダー</strong></td></tr><tr><td><em>前左 (FL)</em></td><td></td><td></td><td></td></tr><tr><td><em>前右 (FR)</em></td><td></td><td></td><td></td></tr><tr><td><em>後左 (BL)</em></td><td></td><td></td><td></td></tr><tr><td><em>後右 (BR)</em></td><td></td><td></td><td></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>モジュール</th><th>モーター CAN ID</th><th>モーター CAN ID</th><th>エンコーダー CAN/チャンネル ID</th></tr></thead><tbody><tr><td></td><td><strong>ドライブ</strong></td><td><strong>角度</strong></td><td><strong>絶対エンコーダー</strong></td></tr><tr><td><em>前左 (FL)</em></td><td></td><td></td><td></td></tr><tr><td><em>前右 (FR)</em></td><td></td><td></td><td></td></tr><tr><td><em>後左 (BL)</em></td><td></td><td></td><td></td></tr><tr><td><em>後右 (BR)</em></td><td></td><td></td><td></td></tr></tbody></table>
 
 7. 反転を確認する
    1. _ドライブ_ホイールを **CCW**（「前進」方向）に回転させる
       * 内蔵エンコーダーの値が**増加**するべき。しない場合はドライブモーターを_反転_させる。
    2. _角度_ホイールを**CCW**（上から見て反時計回り）に回転させる
       * 内蔵エンコーダーの値が**増加**するべき。しない場合は角度モーターを_反転_させる。
-      * アブソリュートエンコーダーの値が**増加**するべき。しない場合はアブソリュートエンコーダーを_反転_させる。
+      * 絶対エンコーダーの値が**増加**するべき。しない場合は絶対エンコーダーを_反転_させる。
    3. ロボット全体を**CCW**に回転させる。ジャイロの角度（ヨー）が**増加**するべき。しない場合は IMU を_反転_させる。
 
 {% hint style="warning" %}
-_注意: ハードウェアユーティリティでモーターコントローラーやアブソリュートエンコーダーにアクセスしている場合、roboRIO は CAN バス上でアクティブであってはなりません。CAN BUS の終端に影響を与えずに roboRIO を確実に無効化する最も信頼性の高い方法は、Power Distribution Panel (PDP) の roboRIO に電力を供給している 10A ヒューズを一時的に抜いてから電源を再投入することです。_
+_注意: ハードウェアユーティリティでモーターコントローラーや絶対エンコーダーにアクセスしている場合、roboRIO は CAN バス上でアクティブであってはなりません。CAN BUS の終端に影響を与えずに roboRIO を確実に無効化する最も信頼性の高い方法は、Power Distribution Panel (PDP) の roboRIO に電力を供給している 10A ヒューズを一時的に抜いてから電源を再投入することです。_
 {% endhint %}
 
-<table data-full-width="true"><thead><tr><th>モジュール</th><th>反転？</th><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td><strong>ドライブ</strong></td><td><strong>角度</strong></td><td><strong>アブソリュートエンコーダー</strong></td><td><strong>IMU</strong></td></tr><tr><td><em>前左 (FL)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>前右 (FR)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>後左 (BL)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>後右 (BR)</em></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>モジュール</th><th>反転？</th><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td><strong>ドライブ</strong></td><td><strong>角度</strong></td><td><strong>絶対エンコーダー</strong></td><td><strong>IMU</strong></td></tr><tr><td><em>前左 (FL)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>前右 (FR)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>後左 (BL)</em></td><td></td><td></td><td></td><td></td></tr><tr><td><em>後右 (BR)</em></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
-### ステップ 4: アブソリュートエンコーダーのオフセット
+### ステップ 4: 絶対エンコーダーのオフセット
 
 8. ロボットの電源を入れる（無効状態でホイールを手動で回せるように）
 9. ドライブエンコーダーの値が増加する方向に前進するよう、4 つのホイールすべてが前を向くよう手動で回転させる（[向き図](creating-your-first-configuration.md#swerve-orientation-diagram-1)の黒い矢印を参照）
-10. 各モジュールのアブソリュートエンコーダーの値を記録する
+10. 各モジュールの絶対エンコーダーの値を記録する
 
 <table data-full-width="true"><thead><tr><th>モジュール</th><th>角度アブソリュートオフセット（度）</th><th></th></tr></thead><tbody><tr><td><em>前左 (FL)</em></td><td></td><td></td></tr><tr><td><em>前右 (FR)</em></td><td></td><td></td></tr><tr><td><em>後左 (BL)</em></td><td></td><td></td></tr><tr><td><em>後右 (BR)</em></td><td></td><td></td></tr></tbody></table>
 

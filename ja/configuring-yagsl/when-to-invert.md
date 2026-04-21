@@ -62,7 +62,7 @@
 
 ### `swerve/modules/.../Raw Absolute Encoder` が減少している場合...
 
-モジュールJSONの `absoluteEncoderInverted` でアブソリュートエンコーダーを反転させてください。
+モジュールJSONの `absoluteEncoderInverted` で絶対エンコーダーを反転させてください。
 
 <pre class="language-json"><code class="lang-json">{
   "drive": {

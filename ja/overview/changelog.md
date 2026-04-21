@@ -44,7 +44,7 @@ YAGSL-Example dev ブランチ
 * [ ] `SwerveDrive.pushOffsetsToEncoders` を `SwerveDrive.useExternalFeedbackSensor` に非推奨化
 * [ ] `SwerveDrive.restoreInternalOffset` を `SwerveDrive.useInternalFeedbackSensor` に非推奨化
 * [ ] [@DanPeled](https://github.com/DanPeled) による Shuffleboard から任意のダッシュボードへの参照更新
-* [ ] SparkFlex に接続されたアブソリュートエンコーダーの修正
+* [ ] SparkFlex に接続された絶対エンコーダーの修正
 * [ ] 接続された絶対エンコーダーはフィードバックデバイスとして自動設定されなくなりました。明示的に呼び出す必要があります
 * [ ] `SwerveInputStream.driveToPose` を追加
 * [ ] [@clrozeboom](https://github.com/clrozeboom) によるフィードフォワードを使うドライブ関数でのモジュール状態オプション最適化 ([#314](https://github.com/BroncBotz3481/YAGSL-Example/pull/314))
@@ -148,7 +148,7 @@ YAGSL-Example dev ブランチ
 * [ ] [@WispySparks](https://github.com/WispySparks) による Talon SRX での統合絶対エンコーダーサポート追加 ([#208](https://github.com/BroncBotz3481/YAGSL-Example/pull/208))
 * [ ] [@catr1xLiu](https://github.com/catr1xLiu) による DCMotor モデリングを使った PathPlanner DriveFeedForward の実装 ([#260](https://github.com/BroncBotz3481/YAGSL-Example/pull/260))
 * [ ] NavX 反転の修正
-* [ ] Team 457 Grease Monkeys の協力による MAXSwerve のアブソリュートエンコーダー問題の修正
+* [ ] Team 457 Grease Monkeys の協力による MAXSwerve の絶対エンコーダー問題の修正
 
 ## 2024.7.0 - 2024 WPILib 最終バージョン
 
